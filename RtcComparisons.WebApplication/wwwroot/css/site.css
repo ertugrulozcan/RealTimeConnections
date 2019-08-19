@@ -1,0 +1,296 @@
+﻿html {
+    font-size: 62.5%;
+}
+
+html,
+body,
+#container {
+    height: 100%;
+}
+
+body {
+    font-family: helvetica;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat {
+    width: 93%;
+    border: solid 1px #EEE;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.balloon_text {
+    font-size: small;
+}
+
+.messages {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    border-radius: 12px;
+    padding: 4px 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.yours {
+    align-items: flex-start;
+}
+
+.yours .message {
+    margin-right: 25%;
+    background-color: #eee;
+    position: relative;
+}
+
+.yours .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: -7px;
+    height: 10px;
+    width: 20px;
+    background: #eee;
+    border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-right-radius: 10px;
+}
+
+.mine {
+    align-items: flex-end;
+}
+
+.mine .message {
+    color: white;
+    margin-left: 25%;
+    background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.mine .message.last:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: -8px;
+    height: 10px;
+    width: 20px;
+    background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
+    background-attachment: fixed;
+    border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-bottom-left-radius: 10px;
+}
+
+#wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+@font-face {
+    font-family: "untitled-font-2";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.outline_border {
+    padding: 20px 0 20px 0;
+}
+
+.window {
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(50,50,50,0.11);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(50,50,50,0.11);
+    box-shadow: 0px 2px 3px 0px rgba(50,50,50,0.11);
+    text-align: left;
+    vertical-align: top;
+    animation: zoom 500ms;
+    -webkit-animation: zoom 500ms;
+    min-height: 300px;
+    position: relative;
+}
+
+.window .header {
+    line-height: 30px;
+    vertical-align: top;
+    padding: 2px 9px 3px;
+}
+
+.window .header .title {
+    font-family: "Myriad Pro";
+    max-height: 30px;
+}
+
+.window .bullet {
+    height: 11px;
+    width: 11px;
+    display: inline-block;
+    background: #ccc;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.window .bullet-red {
+    background: #df7065;
+}
+
+.window .bullet-yellow {
+    background: #e6bb46;
+}
+
+.window .bullet-green {
+    background: #5bcc8b;
+}
+
+.browser .header {
+    background: #e8e8e8;
+    border-radius: 4px 4px 0 0;
+}
+
+.browser .header .title {
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.browser .header .title input {
+    border: none;
+    background-color: transparent;
+    font-size: x-small;
+    width: 85%;
+    padding-left: 8px;
+}
+
+.browser .header button {
+    margin-left: 10px;
+    width: 80px;
+}
+
+.browser .header .title .scheme {
+    color: #7ed321;
+}
+
+.window .footer {
+    background: #e8e8e8;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 30px;
+    padding: 7px 10px 8px 10px;
+}
+
+.window .footer input {
+    background-color: #fff;
+    font-size: x-small;
+    width: 100%;
+}
+
+.browser .body {
+    padding: 16px;
+    font: 11px "Lucida Grande", "Open Sans";
+}
+
+.message_input {
+    font-size: small;
+    background: #fff;
+    border-radius: 4px;
+}
+
+button {
+    text-decoration: none;
+    font-family:".LucidaGrandeUI", "Lucida Grande", "Lucida sans unicode";
+    color: black;
+    font-size: 11px;
+    padding: 1px 7px;
+    border:1px solid #9C9C9C;
+    background-image: -webkit-linear-gradient(
+            #ffffff 0%, #F6F6F6 	30%,
+            #F3F3F3 45%, #EDEDED 	60%,
+            #eeeeee 100%);
+    border-radius: 3px;
+    cursor: default;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+}
+
+button:active {
+    border-color:#705ebb;
+    background-image:-webkit-linear-gradient(
+            #acc5e9 0%, 		#a3c0f2 18%,
+            #61a0ed 39%,		#55a3f2 70%,
+            #82c2f1 91.72%, 	#9AD2F2 100%);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.65);
+}
+
+button.disabled {
+    color: #999!important;
+    background-image: -webkit-linear-gradient(#fbf8f8 0%, #f0f0f0 30%, #e3e3e3 45%, #d7d7d7 60%, #cbc9c9 100%);
+}
+
+.output
+{
+    display: inline-block;
+    font-family: "Consolas";
+    padding-bottom: 5px;
+}
+
+.green
+{
+    color: green;
+}
+
+.red
+{
+    color: darkred;
+}

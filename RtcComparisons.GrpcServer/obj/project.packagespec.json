@@ -1,0 +1,66 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
+    "projectName": "RtcComparisons.GrpcServer",
+    "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
+    "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Google.Protobuf": {
+          "target": "Package",
+          "version": "[3.9.1, )"
+        },
+        "Grpc.Core": {
+          "target": "Package",
+          "version": "[1.22.0, )"
+        },
+        "Grpc.Tools": {
+          "target": "Package",
+          "version": "[1.22.0, )"
+        },
+        "Microsoft.AspNetCore.Cors": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

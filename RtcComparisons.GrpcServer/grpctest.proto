@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "GrpcServerProto";
+option objc_class_prefix = "GrpcServer";
+
+package grpcserver;
+
+// The greeting service definition.
+service GrpcServerService {
+  // Sends a greeting
+  rpc Handshake (GrpcHandshakeRequest) returns (GrpcHandshakeResponse) {}
+}
+
+message GrpcHandshakeRequest {
+  
+}
+
+message GrpcHandshakeResponse {
+  string userId = 1;
+}
+
+// The request message containing the user's name.
+message GrpcRequest {
+  string message = 1;
+  string user = 2;
+  string recipient = 3;
+}
+
+// The response message containing the greetings
+message GrpcResponse {
+  string message = 1;
+}

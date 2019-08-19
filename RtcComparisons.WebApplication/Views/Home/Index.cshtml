@@ -1,0 +1,140 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="outline_border" xmlns="http://www.w3.org/1999/html">
+	<div style="text-align: center;">
+		<h1>Real Time Connections</h1>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	
+	<!-- WebSocket -->
+	<img src="images/websockets.png" width="110"/>
+	<h4>WebSocket Client</h4>
+	<div class="row">
+		<div class="window browser fading">
+			<div class="header">
+				<span class="bullet bullet-red"></span>
+				<span class="bullet bullet-yellow"></span>
+				<span class="bullet bullet-green"></span>
+				<span class="title">
+					<label for="websocketUrlInputBox"></label><input id="websocketUrlInputBox" value="ws://localhost:9716/ws"/>
+				</span>
+
+				<button id="websocketConnectButton" type="submit" href="#">Connect</button>
+			</div>
+
+			<div class="body">
+				<div id="websocketOutputBox"></div>
+			</div>
+
+			<div class="footer">
+				<span class="title">
+					<label for="websocketMessageInputBox"></label><input id="websocketMessageInputBox"/>
+				</span>
+
+				<button id="websocketSendButton" type="submit" href="#">Send</button>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<hr/>
+	<br/>
+
+	<!-- Grpc -->
+	<img src="images/grpc.png" width="170"/>
+	<h4>Grpc Client</h4>
+	<div class="row">
+		<div class="window browser fading">
+			<div class="header">
+				<span class="bullet bullet-red"></span>
+				<span class="bullet bullet-yellow"></span>
+				<span class="bullet bullet-green"></span>
+				<span class="title">
+					<label for="grpcUrlInputBox"></label><input id="grpcUrlInputBox" value="localhost:9720"/>
+				</span>
+
+				<button id="grpcConnectButton" type="submit" href="#">Connect</button>
+			</div>
+
+			<div class="body">
+				<div id="grpcOutputBox"></div>
+			</div>
+
+			<div class="footer">
+				<span class="title">
+					<label for="grpcMessageInputBox"></label><input id="grpcMessageInputBox"/>
+				</span>
+
+				<button id="grpcSendButton" type="submit" href="#">Send</button>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<hr/>
+	<br/>
+
+	<!-- NodeJS -->
+	<img src="images/nodejs.png" width="200"/>
+	<h4>NodeJS Client</h4>
+	<div class="row">
+		<div class="window browser fading">
+			<div class="header">
+				<span class="bullet bullet-red"></span>
+				<span class="bullet bullet-yellow"></span>
+				<span class="bullet bullet-green"></span>
+				<span class="title">
+					<label for="nodejsUrlInputBox"></label><input id="nodejsUrlInputBox" value="http://localhost:9722"/>
+				</span>
+
+				<button id="nodejsConnectButton" type="submit" href="#">Connect</button>
+			</div>
+
+			<div class="body">
+				<div id="nodejsOutputBox"></div>
+			</div>
+
+			<div class="footer">
+				<span class="title">
+					<label for="nodejsMessageInputBox"></label><input id="nodejsMessageInputBox"/>
+				</span>
+
+				<button id="nodejsSendButton" type="submit" href="#">Send</button>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<hr/>
+	<br/>
+
+	<!-- SignalR -->
+	<img src="images/signalr.png" width="200"/>
+	<h4>SignalR Client</h4>
+	<div class="row">
+		<div class="window browser fading">
+			<div class="header">
+				<span class="bullet bullet-red"></span>
+				<span class="bullet bullet-yellow"></span>
+				<span class="bullet bullet-green"></span>
+				<span class="title">
+					<label for="signalrUrlInputBox"></label><input id="signalrUrlInputBox" value="http://localhost:9718/hub"/>
+				</span>
+
+				<button id="signalrConnectButton" type="submit" href="#">Connect</button>
+			</div>
+
+			<div class="body">
+				<div id="signalrOutputBox"></div>
+			</div>
+
+			<div class="footer">
+				<span class="title">
+					<label for="signalrMessageInputBox"></label><input id="signalrMessageInputBox"/>
+				</span>
+
+				<button id="signalrSendButton" type="submit" href="#">Send</button>
+			</div>
+		</div>
+	</div>
+</div>

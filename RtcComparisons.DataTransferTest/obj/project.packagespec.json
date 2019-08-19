@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
+    "projectName": "RtcComparisons.DataTransferTest",
+    "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
+    "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj"
+          },
+          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
+          },
+          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj"
+          },
+          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
