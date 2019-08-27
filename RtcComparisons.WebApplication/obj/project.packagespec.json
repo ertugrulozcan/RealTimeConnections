@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
+    "projectUniqueName": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
     "projectName": "RtcComparisons.WebApplication",
-    "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
-    "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/obj/",
+    "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
+    "outputPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

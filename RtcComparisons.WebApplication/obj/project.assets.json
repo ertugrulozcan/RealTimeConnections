@@ -8467,11 +8467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
+      "projectUniqueName": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
       "projectName": "RtcComparisons.WebApplication",
-      "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
+      "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/RtcComparisons.WebApplication.csproj",
       "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebApplication/obj/",
+      "outputPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebApplication/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

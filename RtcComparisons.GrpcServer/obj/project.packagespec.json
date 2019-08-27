@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
+    "projectUniqueName": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
     "projectName": "RtcComparisons.GrpcServer",
-    "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
-    "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/obj/",
+    "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj",
+    "outputPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.GrpcServer/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -18,8 +18,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
-            "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
+          "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
+            "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
           }
         }
       }

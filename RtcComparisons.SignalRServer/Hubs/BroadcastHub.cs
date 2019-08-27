@@ -1,18 +1,26 @@
+using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
-using Microsoft.Extensions.DependencyInjection;
-using RtcComparisons.Infrastructure.Services;
-using RtcComparisons.SignalRServer.Services.Interfaces;
 
 namespace RtcComparisons.SignalRServer.Hubs
 {
 	public class BroadcastHub : Hub
 	{
-		private readonly IHubService hubService;
-		
 		public BroadcastHub()
 		{
-			this.hubService = ServiceLocator.Current.GetService<IHubService>();
+			
+		}
+
+		public override Task OnConnectedAsync()
+		{
+			Console.WriteLine($"[{this.Context.ConnectionId}] connected.");
+			return base.OnConnectedAsync();
+		}
+
+		public override Task OnDisconnectedAsync(Exception exception)
+		{
+			Console.WriteLine($"[{this.Context.ConnectionId}] disconnected.");
+			return base.OnDisconnectedAsync(exception);
 		}
 
 		public async Task Handshake(string connectionId, string message)
@@ -25,9 +33,9 @@ namespace RtcComparisons.SignalRServer.Hubs
 			await this.Clients.Client(connectionId).SendAsync("ReceiveMessage", message);
 		}
 		
-		public async Task BroadcastMessage(string connectionId, string message)
+		public async Task BroadcastMessage(string from, string message)
 		{
-			await this.Clients.All.SendAsync("ReceiveBroadcastMessage", connectionId, message);
+			await this.Clients.All.SendAsync("ReceiveBroadcastMessage", from, message);
 		}
 	}
 }

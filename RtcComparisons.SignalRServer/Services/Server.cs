@@ -5,18 +5,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using RtcComparisons.Infrastructure.Services;
 using RtcComparisons.SignalRServer.Hubs;
-using RtcComparisons.SignalRServer.Services.Interfaces;
 
 namespace RtcComparisons.SignalRServer.Services
 {
 	public class Server : IServer
 	{
-		#region Services
-
-		private IHubService hubService;
-
-		#endregion
-		
 		#region Properties
 
 		private IWebHost Host { get; set; }
@@ -52,10 +45,10 @@ namespace RtcComparisons.SignalRServer.Services
 			}
 
 			app.UseCors("CorsPolicy");
-			
-			this.hubService = new HubService(app);
-			this.Services.AddSingleton(this.hubService);
-			this.hubService.RegisterHub<BroadcastHub>("/hub");
+			app.UseSignalR(routes =>
+			{
+				routes.MapHub<BroadcastHub>("/hub");
+			});
 
 			ServiceLocator.Current = this.Services.BuildServiceProvider();
 		}
@@ -95,7 +88,7 @@ namespace RtcComparisons.SignalRServer.Services
 		
 		public void OnMessageReceived(Action<string> action)
 		{
-			this.hubService.ReceivedMessage += delegate(object sender, string message) { action?.Invoke(message); };
+			throw new NotImplementedException();
 		}
 
 		#endregion

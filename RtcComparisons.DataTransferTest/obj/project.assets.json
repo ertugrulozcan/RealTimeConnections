@@ -380,6 +380,20 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.HttpOverrides.dll": {}
         }
       },
+      "Microsoft.AspNetCore.NodeServices/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Logging.Console": "2.1.1",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Routing/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -710,7 +724,7 @@
           "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview8.19405.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -1393,6 +1407,23 @@
           "bin/placeholder/RtcComparisons.Infrastructure.dll": {}
         }
       },
+      "RtcComparisons.NodejsServer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore": "2.1.7",
+          "Microsoft.AspNetCore.Cors": "2.2.0",
+          "Microsoft.AspNetCore.NodeServices": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.0.0-preview8.19405.4",
+          "RtcComparisons.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RtcComparisons.NodejsServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RtcComparisons.NodejsServer.dll": {}
+        }
+      },
       "RtcComparisons.SignalRServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -1809,6 +1840,19 @@
         "microsoft.aspnetcore.httpoverrides.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.NodeServices/2.1.1": {
+      "sha512": "zULLPbtIXzz8KFmDVr3lDwn6WhqtGP2MBbc602ViI9ymXFlPRBL7jrvfUg6+PhBxDnpHmOaZNJLIl+8rJha46w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.nodeservices/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.xml",
+        "microsoft.aspnetcore.nodeservices.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.nodeservices.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Routing/2.2.0": {
       "sha512": "jAhDBy0wryOnMhhZTtT9z63gJbvCzFuLm8yC6pHzuVu9ZD1dzg0ltxIwT4cfwuNkIL/TixdKsm3vpVOpG8euWQ==",
       "type": "package",
@@ -2124,16 +2168,16 @@
         "microsoft.extensions.dependencyinjection.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.2.0": {
-      "sha512": "f9hstgjVmr6rmrfGSpfsVOl2irKAgr1QjrSi3FgnS7kulxband50f2brRLwySAQTADPZeTdow0mpSMcoAdadCw==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0-preview8.19405.4": {
+      "sha512": "4x5Vc9OtjxDw+3Fnc5itGDfg0sxK4/9ogdoKRwrf3Z6kygJ914PkoFReX/sSozpU2UJEBRIbLFlXzNMx6k7qkA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.2.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0-preview8.19405.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.3.0.0-preview8.19405.4.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -3851,6 +3895,11 @@
       "path": "../RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj",
       "msbuildProject": "../RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
     },
+    "RtcComparisons.NodejsServer/1.0.0": {
+      "type": "project",
+      "path": "../RtcComparisons.NodejsServer/RtcComparisons.NodejsServer.csproj",
+      "msbuildProject": "../RtcComparisons.NodejsServer/RtcComparisons.NodejsServer.csproj"
+    },
     "RtcComparisons.SignalRServer/1.0.0": {
       "type": "project",
       "path": "../RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj",
@@ -3867,6 +3916,7 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "RtcComparisons.GrpcServer >= 1.0.0",
       "RtcComparisons.Infrastructure >= 1.0.0",
+      "RtcComparisons.NodejsServer >= 1.0.0",
       "RtcComparisons.SignalRServer >= 1.0.0",
       "RtcComparisons.WebSocketServer >= 1.0.0"
     ]
@@ -3878,11 +3928,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
+      "projectUniqueName": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
       "projectName": "RtcComparisons.DataTransferTest",
-      "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
+      "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.DataTransferTest/RtcComparisons.DataTransferTest.csproj",
       "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.DataTransferTest/obj/",
+      "outputPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.DataTransferTest/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -3899,17 +3949,20 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj": {
-              "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj"
+            "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj": {
+              "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.GrpcServer/RtcComparisons.GrpcServer.csproj"
             },
-            "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
-              "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
+            "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj": {
+              "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj"
             },
-            "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj": {
-              "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj"
+            "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.NodejsServer/RtcComparisons.NodejsServer.csproj": {
+              "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.NodejsServer/RtcComparisons.NodejsServer.csproj"
             },
-            "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj": {
-              "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj"
+            "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj": {
+              "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.SignalRServer/RtcComparisons.SignalRServer.csproj"
+            },
+            "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj": {
+              "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/RtcComparisons.WebSocketServer.csproj"
             }
           }
         }

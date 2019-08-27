@@ -2515,11 +2515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj",
+      "projectUniqueName": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj",
       "projectName": "RtcComparisons.Infrastructure",
-      "projectPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj",
+      "projectPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/RtcComparisons.Infrastructure.csproj",
       "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.Infrastructure/obj/",
+      "outputPath": "/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

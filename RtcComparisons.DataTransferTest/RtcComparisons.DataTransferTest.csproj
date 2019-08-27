@@ -8,6 +8,7 @@
     <ItemGroup>
       <ProjectReference Include="..\RtcComparisons.GrpcServer\RtcComparisons.GrpcServer.csproj" />
       <ProjectReference Include="..\RtcComparisons.Infrastructure\RtcComparisons.Infrastructure.csproj" />
+      <ProjectReference Include="..\RtcComparisons.NodejsServer\RtcComparisons.NodejsServer.csproj" />
       <ProjectReference Include="..\RtcComparisons.SignalRServer\RtcComparisons.SignalRServer.csproj" />
       <ProjectReference Include="..\RtcComparisons.WebSocketServer\RtcComparisons.WebSocketServer.csproj" />
     </ItemGroup>

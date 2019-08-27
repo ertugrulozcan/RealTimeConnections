@@ -12,3 +12,17 @@
 /Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.csproj.CopyComplete
 /Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.dll
 /Users/admin/Projects/ArGe/RtcComparisons/RtcComparisons/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.pdb
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.deps.json
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.runtimeconfig.json
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.runtimeconfig.dev.json
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.dll
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.pdb
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.Infrastructure.dll
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/bin/Debug/netcoreapp2.1/RtcComparisons.Infrastructure.pdb
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.csprojAssemblyReference.cache
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.AssemblyInfoInputs.cache
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.AssemblyInfo.cs
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.csproj.CopyComplete
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.dll
+/Users/admin/Projects/ArGe/RealTimeConnections/RtcComparisons.WebSocketServer/obj/Debug/netcoreapp2.1/RtcComparisons.WebSocketServer.pdb
