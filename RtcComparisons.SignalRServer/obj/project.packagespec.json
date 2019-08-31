@@ -45,6 +45,14 @@
           "target": "Package",
           "version": "[1.1.0, )"
         },
+        "Microsoft.AspNetCore.SignalR.Protocols.MessagePack": {
+          "target": "Package",
+          "version": "[1.1.5, )"
+        },
+        "Microsoft.AspNetCore.SignalR.StackExchangeRedis": {
+          "target": "Package",
+          "version": "[1.1.5, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
